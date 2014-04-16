@@ -1,0 +1,3 @@
+<%= form_for Message.new(author: current_user), remote: true do |f| %>
+    <span class="author"><%= current_user.name %>:</span> <%= f.text_field(:text) %>
+<% end %>

@@ -1,0 +1,9 @@
+<h1>Messages</h1>
+
+<% if user_signed_in? %>
+    <%= render 'messages/form' %>
+<% end %>
+
+<div id="messages">
+    <%= render @messages %>
+</div>

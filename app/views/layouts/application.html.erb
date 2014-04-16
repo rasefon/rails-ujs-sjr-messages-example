@@ -8,6 +8,13 @@
 </head>
 <body>
 
+<div>
+  <% if user_signed_in? %>
+    <%= link_to "Logout", :logout, method: :post %>
+  <% else %>
+    <%= link_to "Login", :login, method: :post %>
+  <% end %>
+</div>
 <%= yield %>
 
 </body>
