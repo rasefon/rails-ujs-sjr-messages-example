@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+
+#messages {
+    max-width: 960px;
+}
+.message .created_at {
+    float: right;
+    color: #666;
+}
+.author {
+    color: #666;
+}
+.message,
+form{
+    padding: 2px 3px;
+}
+#messages:not(.odd) .message:nth-child(2n-1) {
+    background-color: #EEE;
+}
+#messages.odd .message:nth-child(2n) {
+    background-color: #EEE;
+}

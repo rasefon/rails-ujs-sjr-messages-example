@@ -4,6 +4,6 @@
     <%= render 'messages/form' %>
 <% end %>
 
-<div id="messages">
+<div id="messages" class="<%= Message.count.odd? ? 'odd' : '' %>">
     <%= render @messages %>
 </div>
