@@ -1,4 +1,4 @@
-<div class="message">
+<div class="message" id="<%= dom_id message %>">
   <span class="created_at">[<%= l message.created_at, format: :short %>] </span>
   <span class="author"><%= message.author.name %></span>: <%= message.text %>
 </div>
