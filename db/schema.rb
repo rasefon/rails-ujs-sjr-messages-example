@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20140416124129) do
 
-  create_table "messages", force: true do |t|
+  create_table "messages", force: :cascade do |t|
     t.text     "text"
     t.integer  "author_id"
     t.datetime "created_at"

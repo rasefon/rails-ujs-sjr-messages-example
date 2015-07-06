@@ -5,5 +5,5 @@
 <% end %>
 
 <div id="messages" class="<%= Message.count.odd? ? 'odd' : '' %>">
-    <%= render @messages %>
+    <%= render partial: :product, collection: @messages %>
 </div>

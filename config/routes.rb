@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :messages, only: [:create]
+  resources :messages, only: [:create, :destroy]
 
   post 'login' => 'application#login'
   post 'logout' => 'application#logout'
